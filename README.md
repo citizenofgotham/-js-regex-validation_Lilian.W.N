@@ -18,4 +18,4 @@ This project is a simple form validation system for a Health & Wellness App. It 
 - JavaScript
 
 ## Author
-Your Name
+Lilian Wanjiru
