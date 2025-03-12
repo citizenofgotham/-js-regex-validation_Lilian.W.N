@@ -3,55 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health & Wellness App Registration</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <!-- Title outside the container -->
-    <h1>Health & Wellness App Registration</h1>
-
-    <!-- Form Container -->
-    <div class="container">
-        <!-- Form -->
+    <div class="form-container">
         <form id="validationForm">
-            <!-- Full Name Field -->
-            <div class="form-group">
+            <div>
                 <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" placeholder="&#9998; Enter your full name">
-                <span class="error" id="nameError"></span>
+                <input type="text" id="fullName" name="fullName">
+                <span id="nameError" class="error-message"></span>
             </div>
-
-            <!-- Email Field -->
-            <div class="form-group">
+            <div>
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="&#9993; Enter your email">
-                <span class="error" id="emailError"></span>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error-message"></span>
             </div>
-
-            <!-- Phone Number Field -->
-            <div class="form-group">
+            <div>
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" placeholder="&#9742; Enter your phone number">
-                <span class="error" id="phoneError"></span>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneError" class="error-message"></span>
             </div>
-
-            <!-- Password Field -->
-            <div class="form-group">
+            <div>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="&#128274; Enter your password">
-                <span class="error" id="passwordError"></span>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error-message"></span>
             </div>
-
-            <!-- Submit Button -->
             <button type="submit">Submit</button>
         </form>
-
-        <!-- Success Message -->
-        <p id="successMessage"></p>
+        <div id="successMessage" class="success-message"></div>
     </div>
 
-    <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+    <!-- Pop-up message container -->
+    <div id="popupMessage" class="popup">
+        <span class="popup-text">Form submitted successfully!</span>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
